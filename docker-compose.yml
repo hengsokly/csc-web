@@ -24,5 +24,12 @@ services:
     env_file: app.env
     depends_on:
       - db
+      - smtp
     stdin_open: true
     tty: true
+
+  smtp:
+    image: 'djfarrelly/maildev:latest'
+    command: 'bin/maildev --web 3080 --smtp 1025 --incoming-user smtp --incoming-pass smtp'
+    ports:
+      - '3080:3080'

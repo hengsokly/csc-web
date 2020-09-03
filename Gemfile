@@ -30,8 +30,12 @@ gem "haml-rails", "~> 2.0"
 gem "jquery-rails",   "~> 4.4.0"
 gem "bootstrap",      "~> 4.5.2"
 
+gem "devise", "~> 4.7.2"
+
 # Reduces boot times through caching; required in config/boot.rb
-gem 'bootsnap', '>= 1.4.2', require: false
+gem "bootsnap", ">= 1.4.2", require: false
+
+gem "sentry-raven", "~> 3.0.4"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -58,6 +62,8 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
+  gem 'shoulda-matchers', '~> 4.0'
+  gem 'database_cleaner-active_record', '~> 1.8.0'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
