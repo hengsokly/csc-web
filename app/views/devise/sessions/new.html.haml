@@ -1,7 +1,14 @@
 = render 'devise/shared/logo'
 
 .form-wrapper.pr-1
-  %h2= t('devise.login')
+  = link_to user_google_oauth2_omniauth_authorize_path, class: 'btn btn-outline-primary w-100' do
+    = image_tag 'google.png', style: 'width: 18px;'
+    = t('devise.sign_in_with', omniauth: 'Gmail')
+
+  .d-flex.flex-row.align-items-center
+    .line.flex-grow-1
+    .or-label OR
+    .line.flex-grow-1
 
   = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
     .form-group
