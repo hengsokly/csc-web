@@ -10,4 +10,4 @@
       .modal-footer
         %button.btn.btn-secondary{"data-dismiss" => "modal", :type => "button"} Cancel
 
-        = link_to "Logout", destroy_user_session_path, method: :delete, class: 'btn btn-primary'
+        = link_to "Logout", main_app.destroy_user_session_path, method: :delete, class: 'btn btn-primary'

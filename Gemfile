@@ -27,7 +27,7 @@ gem 'jbuilder', '~> 2.7'
 
 gem "haml", "~> 5.1.2"
 gem "haml-rails", "~> 2.0"
-gem "jquery-rails",   "~> 4.4.0"
+gem "jquery-rails",   "~> 4.3.5"
 gem "bootstrap",      "~> 4.5.2"
 
 gem "devise", "~> 4.7.2"
@@ -37,6 +37,9 @@ gem "bootsnap", ">= 1.4.2", require: false
 
 gem "sentry-raven", "~> 3.0.4"
 gem 'omniauth-google-oauth2'
+
+# gem "survey_form", github: "hengsokly/survey_form", branch: "bootstrap"
+gem "survey_form", path: "engines/survey_form"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
