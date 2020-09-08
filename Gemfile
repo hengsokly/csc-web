@@ -36,6 +36,7 @@ gem "devise", "~> 4.7.2"
 gem "bootsnap", ">= 1.4.2", require: false
 
 gem "sentry-raven", "~> 3.0.4"
+gem 'omniauth-google-oauth2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
